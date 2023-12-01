@@ -1,0 +1,28 @@
+**Days 1-2: Introduction to Spring Framework**
+- **Day 1: Core Concepts**
+    - **Inversion of Control (IoC)**: This is a design principle that inverts the flow of control compared to traditional control flow. In IoC, custom-written portions of a computer program receive the flow of control from a generic framework. This helps in decoupling the execution of a task from implementation and makes the system more modular and flexible.
+    - **Dependency Injection (DI)**: This is a technique whereby one object supplies the dependencies of another object. It allows us to remove the hard-coded dependencies and make our application loosely coupled, extendable, and maintainable. DI can be done through setter injection, constructor injection, and interface injection.
+
+- **Day 2: Spring Configuration**
+    - **XML Configuration**: In Spring Framework, we can configure the dependencies using XML. Each bean is defined in an XML entry and it helps in wiring up dependencies. The XML configuration file is typically named `applicationContext.xml` and placed in the `src/main/resources` directory.
+    - **Annotation Configuration**: Spring allows us to use annotations as an alternative to XML configurations to define a bean. Using annotation offers a more direct approach of programming. Some commonly used annotations are `@Component`, `@Service`, `@Repository`, `@Autowired`, etc.
+
+**Days 3-4: Spring Boot Fundamentals**
+- **Day 3: Spring Boot Features**
+    - **Spring Boot**: It is a module that provides rapid application development feature to the spring framework including auto-configuration, standalone-code, and production-ready code. It automatically configures your Spring application based on the jar dependencies you added in the project.
+    - It helps in creating stand-alone, production-grade Spring based applications with minimal effort. It reduces lots of development time and increases productivity.
+
+- **Day 4: Spring Boot Project Setup**
+    - **Setting up a project**: You can use Spring Initializr web tool or Spring Boot CLI to create a Spring Boot application. Spring Initializr provides an easy way to generate a project with specific dependencies.
+    - **Understanding the project structure**: Familiarize yourself with the project structure and its conventions to understand how the application is organized. The main application class, controller classes, repository classes, and service classes each have their own designated packages.
+    - **Embedded server**: Spring Boot applications 'just run'. A Spring Boot application has an embedded servlet engine making it independent of application servers. The default embedded server is Tomcat.
+
+**Day 5: Spring MVC**
+- **Spring MVC**: The Spring Web MVC framework provides a model-view-controller architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.
+    - **Model**: The Model is responsible for managing the data of the application. It receives user input from the controller.
+    - **View**: The View renders the model data and generates the final output. It is the presentation layer of the application.
+    - **Controller**: The Controller handles the user requests and controls the data flow into the model object and updates the view whenever data changes. It keeps the view and model separate.
+- In a Spring MVC application, you can use the `@Controller` annotation to declare a class as a controller. The `@RequestMapping` annotation is used to map a URL to either an entire class or a particular handler method.
+- Spring MVC supports RESTful URLs, which are user-friendly and SEO-friendly. It also has flexible configuration for both framework and application classes as either Java annotations or XML configuration.
+- Spring MVC can be easily integrated with other frameworks like Struts, Hibernate, etc. It also supports internationalization (i18n), ETag, supports for uploading files, and built-in support for various view technologies like JSP, Velocity, Tiles, iText, POI, and so on.
+- Spring MVC separates the roles of the controller, Model, and View, which makes it easier to manage the complexity of large applications and keep the code clean. It also promotes the "Separation of Concerns" design principle.
